@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-int m;
+int y;
 
-for (m = 97; m <= 122; m++)
+for (y = 97; y <= 122; y++)
 {
-if (m == 101 || m == 113)
+if (y == 101 || y == 113)
 {
 }
 else
 {
-putchar(m);
+putchar(y);
 }
 }
 putchar('\n');
