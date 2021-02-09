@@ -1,12 +1,12 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * add - adds two integers and returns the result
+ * @a: an integer to add to b
+ * @b: an integer to add to a
+ * Return: Void.
  */
-int add(int a, int b){
-    return a+b;
 
+int add(int a, int b)
+{
+	return (a + b);
 }
