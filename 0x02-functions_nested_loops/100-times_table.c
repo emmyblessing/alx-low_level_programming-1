@@ -1,48 +1,66 @@
 #include "holberton.h"
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-void print_times_table(int n){
-    int s,m,result;
-    if ( n > 15 || n<0){
-    }else{
+int _putchar(char c);
 
-for(s=0;s<=n;s++){
-        for(m=0;m<=n;m++){
-            result = s*m;
-            if(m !=0){
-                _putchar(',');
-                _putchar(' ');
-            }
-             if(m == 0){
-                _putchar('0');
-            }else if (result >= 10)
-            {
-                _putchar((result /10) + '0');
-                _putchar((result%10) + '0');
-            }else if ((result < 10) && (m != 0))
-            {
-                _putchar(' ');
-                _putchar((result%10) + '0');
-            }
-        }
-        _putchar('\n');
-    }
-    }
-    
-   
-}
-int main(void)
+/**
+ * print_times_table - print the times table until n
+ *
+ * @n: n times table
+ *
+ * Return: No return
+ */
+
+void print_times_table(int n)
 {
-    print_times_table(3);
-    _putchar('\n');
-    print_times_table(5);
-    _putchar('\n');
-    print_times_table(98);
-    _putchar('\n');
-    print_times_table(12);  
-    return (0);
+	int x;
+	int y;
+
+	if (n >= 0 && n <= 15)
+	{
+
+		for (x = 0; x <= n; x++)
+		{
+
+			for (y = 0; y <= n; y++)
+			{
+
+				if ((x * y) < 10)
+				{
+					if (y != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
+					_putchar((y * x) + '0');
+				}
+
+				else if ((x * y) < 100)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((((y * x) / 10) % 10) + '0');
+					_putchar(((y * x) % 10) + '0');
+				}
+
+				else if ((x * y) < 1000)
+				{
+					_putchar(' ');
+					_putchar((((y * x) / 100) % 10) + '0');
+					_putchar((((y * x) / 10) % 10) + '0');
+					_putchar(((y * x) % 10) + '0');
+				}
+			if (y != (n))
+			{
+				_putchar(',');
+			}
+
+			}
+
+		_putchar('\n');
+
+		}
+
+	}
+
 }
