@@ -1,1 +1,0 @@
-Function nested natural numbers,fibonaccic and loops
