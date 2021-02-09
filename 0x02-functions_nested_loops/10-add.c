@@ -6,9 +6,7 @@
  *
  * Return: Always 0.
  */
-int add(int x, int y){
-    int result;
-    result = x +y;
-    return result;
+int add(int a, int b){
+    return a+b;
 
 }
