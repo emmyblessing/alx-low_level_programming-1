@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-int m, n;
+int x, y;
 
-for (m = 48; m <= 57; m++)
+for (x = 48; x <= 57; x++)
 {
-for (n = 48; n <= 57; n++)
+for (y = 48; y <= 57; y++)
 {
-if (m == n || n <= m)
+if (x == y || y <= x)
 {
 }
 else
 {
-putchar(m);
-putchar(n);
-if (m == 56 && n == 57)
+putchar(x);
+putchar(y);
+if (x == 56 && y == 57)
 {
 }
 else

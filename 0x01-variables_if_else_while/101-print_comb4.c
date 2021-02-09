@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-int m, n, o;
+int x, y, z;
 
-for (m = 48; m <= 57; m++)
+for (x = 48; x <= 57; x++)
 {
-for (n = 48; n <= 57; n++)
+for (y = 48; y <= 57; y++)
 {
-for (o = 48; o <= 57; o++)
+for (z = 48; z <= 57; z++)
 {
-if (m == n || m == o || n == o || n <= m || o <= n)
+if (x == y || x == z || y == z || y <= x || z <= y)
 {
 }
 else
 {
-putchar(m);
-putchar(n);
-putchar(o);
-if (m == 55 && n == 56 && o == 57)
+putchar(x);
+putchar(y);
+putchar(z);
+if (x == 55 && y == 56 && z == 57)
 {
 }
 else
