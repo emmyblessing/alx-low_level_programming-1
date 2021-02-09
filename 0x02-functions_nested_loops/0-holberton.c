@@ -5,14 +5,14 @@ int _putchar(char c);
  *
  * Return: Always 0
  */
-int main(void)
-{
-  char ch[10] = "Holberton";
-      int i = 0;
-while (i < 9){
-      _putchar(ch[i]);
-      i++;
-}
-   _putchar('\n');
-     return (0);
+int main (void){
+    char c[9] = "Holberton";
+    int x =0;
+    while (x<9)
+    {
+        _putchar(c[x]);
+        x++;
+    }
+    _putchar('\n');
+    return (0);
 }
