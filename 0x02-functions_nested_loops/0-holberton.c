@@ -7,12 +7,12 @@ int _putchar(char c);
  */
 int main(void)
 {
-char word[10] = "Holberton";
-int a = 0;
-while (a < 9)
+char str[10] = "Holberton";
+int i = 0;
+while (i < 9)
 {
-_putchar(word[a]);
-a++;
+_putchar(str[i]);
+i++;
 }
 _putchar('\n');
 return (0);
