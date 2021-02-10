@@ -1,17 +1,24 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - prints last digit of number
+ * @n: number to print last digit of
  *
- * Return: Always 0.
+ * Return: the last digit as an int
  */
-int print_last_digit(int n){
-    	
-    n = n%10;
-    if(n<0){
-        n = -n;
-      _putchar(n + '0');
-      return n;
-    }
-return 0;
+
+int print_last_digit(int n)
+{
+	int retval;
+
+	if (n < 0)
+	{
+		retval = (n % 10) * -1;
+	}
+	else
+	{
+		retval = n % 10;
+	}
+	_putchar(retval + '0');
+	return (retval);
 }
