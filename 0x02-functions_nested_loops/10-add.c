@@ -6,7 +6,7 @@
  * Return: Void.
  */
 
-int add(int a, int b)
+int add(int x, int y)
 {
-	return (a + b);
+	return (x + y);
 }
