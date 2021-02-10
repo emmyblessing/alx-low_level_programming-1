@@ -1,20 +1,36 @@
 #include "holberton.h"
-#include <stdio.h>
+#include "stdio.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_to_98 - print all the numbers between the provided number and 98
+ * @n: integer to start at
+ * Return: Void.
  */
-void print_to_98(int n){
 
-    if(n<= 98){
-        for(n=0;n <= 98; n++)
-        printf("%d, ",n);
-    }else
-    {
-        for(n=0;n > 98; n--)
-        printf("%d, ",n);
-    }
-    printf("98\n");
-     
+void print_to_98(int n)
+{
+	int i = 0;
+
+	if (n > 98)
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (i != n)
+			{
+				printf(", ");
+			}
+			printf("%d", i);
+		}
+	}
+	else
+	{
+		for (i = n; i <= 98 ; i++)
+		{
+			if (i != n)
+			{
+				printf(", ");
+			}
+			printf("%d", i);
+		}
+	}
+	putchar('\n');
 }
