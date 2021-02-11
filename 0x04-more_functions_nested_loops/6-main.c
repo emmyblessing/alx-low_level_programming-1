@@ -1,14 +1,17 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
+void print_line(int n);
+
 int main(void)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
+    print_line(0);
+    print_line(2);
+    print_line(10);
+    print_line(-4);
     return (0);
 }
