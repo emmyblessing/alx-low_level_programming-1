@@ -1,39 +1,41 @@
-#include"holberton.h"
-#include<stdio.h>
+#include "holberton.h"
+#include <stdio.h>
 
-/*  Fizz-Buzz
-* int i 1-100
-*\n new line
-* multiple of 3 = Fizz
-* multiple of 5 = Buzz
-*multiple of both 3 and 5 = FizzBuzz
-*each result separated with space.
-*/
-void fizz_buzz(void){
-    int i;
+/**
+ * main - Fizz for multiples of 3 and Buzz for multiples of 5 FizzBuzz for both
+ *
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	int x = 1;
 
-    for(i=1; i<=100; i++){
-        if(i%3 ==0 && i%5 == 0){
-            printf("%s", "FizzBuzz");
-        }else if (i%3 == 0)
-        {
-            printf("%s","Fizz ");
-        }else if (i%5 ==0)
-        {
-            printf("%s","Buzz ");
-        }else
-        {
-            printf("%d ",i);
-        }
-        if (i != 100)
+	while (x < 101)
+	{
+		if (x % 3 == 0 && x % 5 == 0)
+		{
+			printf("%s", "FizzBuzz");
+		}
+		else if (x % 3 == 0)
+		{
+			printf("%s", "Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("%s", "Buzz");
+		}
+		else
+		{
+			printf("%d", x);
+		}
+
+		if (x != 100)
 		{
 		printf(" ");
 		}
-    }
-   printf("\n");
-}
-
-int main(void){
-    fizz_buzz();
-    return (0);
+		x++;
+	}
+	printf("\n");
+	return (0);
 }
