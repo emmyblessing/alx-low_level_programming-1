@@ -1,8 +1,14 @@
 #include "holberton.h"
-void print_numbers(void){
-    char i;
-    for (i='0'; i<='9'; i++){
-        _putchar(i);
-    }
-    _putchar('\n');
+#include <stdio.h>
+
+
+void print_numbers(void)
+{
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }
