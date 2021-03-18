@@ -10,7 +10,7 @@ unsigned int length =0;
 while(str[length])
 length++;
 newnode = malloc(sizeof(list_t));
-if (newnode == NULL)
+if (!newnode)
 {
 return(NULL);
 }
