@@ -10,7 +10,8 @@
 
 The code must be compiled using 
 
-**$ gcc -Wall -Werror -Wextra -pedantic *.c**
+
+*  gcc -Wall -Werror -Wextra -pedantic *.c**
 
 ------------
 
@@ -54,3 +55,5 @@ It`s 64-bit program in assembly that prints "Hello, Holberton", followed by a ne
 
 #### lists.h
 it`s an header file containing the definition of the list_t struct and all the prototypes of the above functions.
+
+
