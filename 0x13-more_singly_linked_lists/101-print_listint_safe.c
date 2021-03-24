@@ -23,6 +23,7 @@ size_t print_listint_safe(const listint_t *head)
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 			break;
 		}
+		printf("\n");
 	}
 
 	return (num);
