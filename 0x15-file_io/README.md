@@ -8,8 +8,9 @@ read, write, set permissions of files in C.
 `0_RDWR` is equal 2.
 
 ## File descriptors
-Integer value                |Name                        |<unistd.h> symbolic constant |<stdio.h> file stream |
-|----------------|-------------------------------|-----------------------------||-----------------------------|
+Integer value                |Name                        |`<unistd.h>` symbolic constant |
+`<stdio.h>` file stream |
+|----------------|-------------------------------|-----------------------------|-----------------------------|
 | 0 | Standard Input | STDIN_FILENO |stdin |
 | 2 | Standard Output | STDOUT_FILENO |stdout |
 | 3 | Standard Error | STDERR_FILENO |stderr |
