@@ -9,7 +9,7 @@ read, write, set permissions of files in C.
 
 ## File descriptors
 
-| Integer value                      | Name                                                            |   <unistd.h>` symbolic constant     | `<stdio.h>` file stream |
+| Integer value                      | Name                                                            |   `<unistd.h>` symbolic constant     | `<stdio.h>` file stream |
 | ------------------------- | -------------------------------------------------------------------- | -----------------| --------------|
 | 0      | Standard Input       | STDIN_FILENO | stdin   |
 | 2      | Standard Output      |   STDOUT_FILENO | stdout |
