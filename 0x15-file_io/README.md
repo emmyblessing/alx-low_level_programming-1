@@ -9,20 +9,11 @@ read, write, set permissions of files in C.
 
 ## File descriptors
 
-| Integer value                      | Name                                                            |   <unistd.h>` symbolic constant     | last |
+| Integer value                      | Name                                                            |   <unistd.h>` symbolic constant     | `<stdio.h>` file stream |
 | ------------------------- | -------------------------------------------------------------------- | -----------------| --------------|
-| 0      | Standard Input       | no | l   |
-| `1-create_file.c`         | `int create_file(const char *filename, char *text_content);`         |   no | l |
-| `2-append_text_to_file.c` | `int append_text_to_file(const char *filename, char *text_content);` | no| l |
-
-
-
-|Integer value                |Name                        |`<unistd.h>` symbolic constant |
-`<stdio.h>` file stream |
-|----------------|-------------------------------|-----------------------------|-----------------------------|
-| 0 | Standard Input | STDIN_FILENO |stdin |
-| 2 | Standard Output | STDOUT_FILENO |stdout |
-| 3 | Standard Error | STDERR_FILENO |stderr |
+| 0      | Standard Input       | STDIN_FILENO | stdin   |
+| 2      | Standard Output      |   STDOUT_FILENO | stdout |
+| 3   | Standard Error | STDERR_FILENO| stderr |
 
 
 ## Tests :heavy_check_mark:
